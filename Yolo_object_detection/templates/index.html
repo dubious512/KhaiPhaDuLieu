@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <link rel="stylesheet" href="/static/style.css"> <!-- Nhập tệp CSS -->
+</head>
+<body>
+    <h1>Upload Image for Object Detection</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Nhận diện</button>
+    </form>
+    <div id="result"></div>
+    <script src="/static/script.js"></script> <!-- Nhập tệp JavaScript -->
+    <footer>
+        <p>&copy; 2025 Object Detection App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
